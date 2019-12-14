@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{Shi-Tomashi}
+\author{filip.reichl, tomas.adam, lucia.szalonova, roman.varga }
+\date{December 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Pseudocode}
+\rcomment{Taylor Series:} 
+ T(x,y) \approx f(u,v)+(x-u) $f_x$(u,v)+(y-v) $f_y$(u,v)+... \\
+ 
+
+
+Rewriting the shifted intesity using the above formula:\\ 
+I(x+u, y+v) \approx I(x,y)+ \partial $I_(_x_,_y_)$/ \partial _x$ \hspace{0,1cm} u +  \partial $I_(_x_,_y_)$/ \partial _y$ \hspace{0,1cm} v \\
+
+
+Let: \partial $I_(_x_,_y_)$/ \partial x = $I_x$\hspace{0,2cm} and 
+\hspace{0,2cm}\partial  $I_(_x_,_y_)$/ \partial y = $I_y$ \hfill \medskip \break 
+i.e. \hspace{0,2cm} $I_x$ \hspace{0,2cm} and \hspace{0,2cm} $I_y$ \hspace{0,2cm} are \hspace{0,2cm} image \hspace{0,1cm} derivatives  \hspace{0,1cm}
+in \hspace{0,1cm} the\hspace{0,1cm} X \hspace{0,1cm}and\hspace{0,1cm} Y \hspace{0,1cm}directions\hspace{0,1cm} respectively. 
+
+then
+\break 
+\vspace{1cm} 
+E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y) \hspace{0,1cm} [I(x,y) + $I_x$  u + $I_y$  v - I(x,y)]^2$  
+
+E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y)\hspace{0,1cm}[$I_x$u + $I_y$v]^2$ \\
+
+
+Expanding, E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y) \hspace{0,1cm} [$I_x$^2$ u^2$ + $I_y$^2$ * v^2$ + 2 $I_x$ $I_y$ u v] \\
+
+Taking u,v out and re-write in Matrix notation give us:\\
+
+E(u,v) \approx (u,v)M(x y)\\
+
+Here, M = \omega(x,y)* $$
+                    \begin{pmatrix}
+                    \Sigma \hspace{0,1cm} $I_x$^2 & \Sigma $I_x$ $I_y$\\
+                    \Sigma \hspace{0,1cm} $I_x$ $I_y$ & \Sigma $I_y$^2\\
+                    \end{pmatrix}
+                $$\\
+\break
+\begin{math}
+R= min( \lambda1, \lambda2)
+\end{math}
+\end{document}

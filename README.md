@@ -12,13 +12,25 @@ This repository represents the solution to the assignment.  The main topic repre
 
 ## Theoretical overview
 
-Shi-Tomasi Corner Detection was published by J.Shi and C.Tomasi in their paper ‘Good Features to Track‘ in 1994. This method is based entirely on the Harris corner detector, with the only variation in the corner scoring function.[1]
+“Shi-Tomasi Corner Detection was published by J.Shi and C.Tomasi in their paper ‘Good Features to Track‘ in 1994.”[1] 
+The Shi-Tomasi corner detector is based entirely on the Harris corner detector, with the only variation in the corner scoring function.
  
+Thanks to one slight variation in a selection criteria made this detector much better than Harris corner detector. If Harris corner detector will fall the Shi tomashi will handle that. Shi Tomasi will make a little change from the original Harris corner detector.
+**The change-**
+“The Harris corner detector has a corner selection criteria. The score is calculated for each pixel, and if the score is above a certain value, the pixel is marked as a corner. The score is calculated using two eigenvalues. That is, you gave the two eigenvalues to a function. The function manipulates them, and gave back a score.”[1] 
+
 The scoring function in the Harris Corner Detector was given by: 
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{150}&space;\fn_phv&space;R=\lambda_{1}&space;*&space;\lambda_{2}&space;-&space;k(\lambda_{1}&space;&plus;&space;\lambda_{2})^{2}" title="R=\lambda_{1} * \lambda_{2} - k(\lambda_{1} + \lambda_{2})^{2}" align="center" />
 
 Instead of this, Shi-Tomasi proposed:
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{150}&space;\fn_phv&space;R=min(\lambda_{1}&space;,&space;\lambda_{2})." title="R=min(\lambda_{1} , \lambda_{2})." align="center" /></a>
+
+**Built function  Good Feuters to Track-**
+From OpenCv we can use function goodFeaturesToTrack(). The function will find N strongest corners in an image. Image should be in grayscale. For that purpose we will translate our image to grayscale by using cvtColor from OpnCv. Then you will select how many corners do you want to find in image. Then you will choose the level of quality which represent the minimum value of corner under which is every of corner rejected. Value is between 0-1.
+
+We will calculate the minimum of euclidean distance between corners detected. Function will find all corners which are above the minimum value. Then it will sort them by the quality of descending order. After that the function will take first strongest corner and throws away all nearby corners in the range of minimum distance and returns N strongest corners.
+
+<img src="https://miro.medium.com/max/528/1*6BrhPwN-zmfh9XyV7iYsKA.png" align="center" /></a>
 
 
 
@@ -39,8 +51,10 @@ findCorners(img, maxCor, thresh, dst)
 
 
 ## Pseudocode
- *.png
- description of variables and if something need clarification in pseudocode
+ PseudocodeShi-Tomashi.png <https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/PseudocodeShi-Tomashi.png/>
  
 ## Citations
-http://aishack.in/tutorials/shitomasi-corner-detector/?fbclid=IwAR1ayGNsnJca4TBidtq1oPsParBSqj4UFYux-5F427SAsnSTaUqyh4o2JY4
+1.Sinha, Utkarsh. Fundamentals of Feutures and Corners. [online]. 2016. [15.12.2019]. Available on the Internet: <http://aishack.in/tutorials/shitomasi-corner-detector/>
+
+2.Kumar, Ankit. Corner detection using OpenCv. [online]. 8.10.2019 [15.12.2019]. Available on the Internet: <https://medium.com/analytics-vidhya/corner-detection-using-opencv-13998a679f76/>
+

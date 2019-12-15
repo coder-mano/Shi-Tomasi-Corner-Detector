@@ -129,6 +129,10 @@ Draws all  the detected corners on two separate test images.
 
 <br/>
 
+###Comparison
+<img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage1.png"/>
+<img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage1.png"/>
+
 ## Pseudocode
 <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/PseudocodeShi-Tomashi.png"/>
  

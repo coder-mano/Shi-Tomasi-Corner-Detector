@@ -72,7 +72,6 @@
 </p>
 
 | Find corners | Good features to track |
-|--------------|------------------------|
 | :----------: | :--------------------: |
 | <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage1.png"/> | <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage1.png"/> |
 | <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage3.png"/> | <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage3.png"/> |

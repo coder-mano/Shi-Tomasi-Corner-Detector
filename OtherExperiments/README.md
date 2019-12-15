@@ -106,6 +106,7 @@
 </td>
   </tr>
 </table>
+
 ## Conclusion
 As we can see, the differences between the listed algorithms are quite minimal. The occurrences of minor differences in coordinates of some specific corners are caused by Euclidean distance calculation. 
 

@@ -134,5 +134,5 @@ Draws all  the detected corners on two separate test images.
 ## Citations
 1.Sinha, Utkarsh. Fundamentals of Feutures and Corners. [online]. 2016. [15.12.2019]. Available on the Internet: <http://aishack.in/tutorials/shitomasi-corner-detector/>
 
-2.Kumar, Ankit. Corner detection using OpenCv. [online]. 8.10.2019 [15.12.2019]. Available on the Internet: <https://medium.com/analytics-vidhya/corner-detection-using-opencv-13998a679f76/>
+
 

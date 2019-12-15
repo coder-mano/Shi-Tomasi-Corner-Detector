@@ -70,7 +70,42 @@
   <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage.png" width="400" />
   <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage.png" width="400" /> 
 </p>
-
+<table>
+  <tr>
+    <td>Find corners</td>
+    <td>Good features to track</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage1.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage1.png"/>
+</td>
+  </tr>
+    <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage3.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage3.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage4.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage4.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage6.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage6.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage99.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage99.png"/>
+</td>
+  </tr>
+</table>
 ## Conclusion
 As we can see, the differences between the listed algorithms are quite minimal. The occurrences of minor differences in coordinates of some specific corners are caused by Euclidean distance calculation. 
 

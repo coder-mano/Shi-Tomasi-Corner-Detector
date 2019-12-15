@@ -6,7 +6,6 @@ import time
 
 def assignmentTest(img, maxCor, thresh, dst):
     outfile = open('../PerformanceExperiments/assignmentCorners.txt', 'w')
-
     for i in range(1000):
         t1 = time.time()
         fc.findCorners(img, maxCor, thresh, dst)
@@ -24,6 +23,37 @@ def goodFeatureTest(img, maxCor, thresh, dst):
         outfile.write(str(t2 - t1) + '\n')
     outfile.close()
 
+
+def cornerPrecisionTest(img, maxCor, thresh, dst):
+    assignmentOutfile = open('../OtherExperiments/assignmentCornersCoordinates.txt', 'w')
+    builtInOutfile = open('../OtherExperiments/builtInCornersCoordinates.txt', 'w')
+
+    for i in range(10):
+        assignmentCorners = fc.findCorners(img, maxCor, thresh, dst)
+        builtInCorners = np.int0(cv2.goodFeaturesToTrack(img, maxCor, thresh, dst))
+
+        for corner in assignmentCorners:
+            assignmentOutfile.write(str(corner[0]) + ' ' + str(corner[1]) + '\n')
+        for corner in builtInCorners:
+            builtInOutfile.write(str(corner.ravel()[0]) + ' ' + str(corner.ravel()[1]) + '\n')
+
+    builtInOutfile.close()
+    assignmentOutfile.close()
+
+
+def cornerNumberTest(img, maxCor, thresh, dst):
+    assignmentOutfile = open('../OtherExperiments/assignmentCornerNumbers.txt', 'a')
+    builtInOutfile = open('../OtherExperiments/builtInCornerNumbers.txt', 'a')
+
+    for i in range(100):
+        assignmentCorners = fc.findCorners(img, maxCor, thresh, dst)
+        builtInCorners = cv2.goodFeaturesToTrack(img, maxCor, thresh, dst)
+
+        assignmentOutfile.write(str(len(assignmentCorners)) + '\n')
+        builtInOutfile.write(str(len(builtInCorners)) + '\n')
+
+    builtInOutfile.close()
+    assignmentOutfile.close()
 
 def main():
     img = fc.readImage('../images/combined.png')
@@ -46,6 +76,10 @@ def main():
 
         # Built-in Shi-Tomasi
         goodFeatureTest(img, maxCorners, thresh, dist)
+
+        # OtherExperiments data preparation
+        cornerPrecisionTest(img, maxCorners, thresh, dist)
+        cornerNumberTest(img, maxCorners, thresh, dist)
 
         # Visualization
         color_img = fc.readImage('../images/combined.png')

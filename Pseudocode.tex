@@ -13,46 +13,58 @@
 \maketitle
 
 \section{Pseudocode}
-\rcomment{Taylor Series:} 
- T(x,y) \approx f(u,v)+(x-u) $f_x$(u,v)+(y-v) $f_y$(u,v)+... \\
+\rcomment{ Function \hspace{0,2cm} findCorners(img, maxCor, thresh, dst)
+} \\
+\\
+The input values are img, maxCor, tresh, dst. Img expects input image, maxCor expects maximum number of corners. Tresh expects the selected threshold and dst the selected distance. \break
+
+
+    dy, dx = np.gradient(img)\\
+    Ixx = dx ^2$    \hspace{0,2cm} Laplace oparator \\
+    Iyy = dy ^2$    \hspace{0,2cm} Laplace oparator \\
  
+An image gradient is a directional change in the intensity or color in an image. (dx,dy)\\
+ 
+The second derivative (dx) in the x direction can be calculated in a discrete image as the difference between the brightness values side by side.\\ 
+
+To detect isolated points can be used Laplace operator \Delta ^ 2.\\ Masks \hspace{0,1cm} in \hspace{0,1cm}the \hspace{0,1cm}positive \hspace{0,1cm}or\hspace{0,1cm} negative\hspace{0,1cm} variant \hspace{0,1cm}are \hspace{0,1cm}used \hspace{0,1cm}for\hspace{0,1cm} the \hspace{0,1cm}Laplace\hspace{0,1cm} operator\\
 
 
-Rewriting the shifted intesity using the above formula:\\ 
-I(x+u, y+v) \approx I(x,y)+ \partial $I_(_x_,_y_)$/ \partial _x$ \hspace{0,1cm} u +  \partial $I_(_x_,_y_)$/ \partial _y$ \hspace{0,1cm} v \\
+    height = img.shape[0]\\
+    width = img.shape[1]\\
 
+Height and width are representing the size of image. From the inserted image we get the size thanks to the shape function.\\
 
-Let: \partial $I_(_x_,_y_)$/ \partial x = $I_x$\hspace{0,2cm} and 
-\hspace{0,2cm}\partial  $I_(_x_,_y_)$/ \partial y = $I_y$ \hfill \medskip \break 
-i.e. \hspace{0,2cm} $I_x$ \hspace{0,2cm} and \hspace{0,2cm} $I_y$ \hspace{0,2cm} are \hspace{0,2cm} image \hspace{0,1cm} derivatives  \hspace{0,1cm}
-in \hspace{0,1cm} the\hspace{0,1cm} X \hspace{0,1cm}and\hspace{0,1cm} Y \hspace{0,1cm}directions\hspace{0,1cm} respectively. 
+    offset = 0  \\
 
-then
-\break 
-\vspace{1cm} 
-E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y) \hspace{0,1cm} [I(x,y) + $I_x$  u + $I_y$  v - I(x,y)]^2$  
+ cornerList = [] \\
+ 
+ The Corners List is an empty arrayList, to which we will adding the found corners.
+ 
+In these two cycles, we look for the corners of the image.\\\break 
 
-E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y)\hspace{0,1cm}[$I_x$u + $I_y$v]^2$ \\
+   for y in range(offset, height - offset):\\ 
+    \hspace{2cm}for x in range(offset, width - offset):\\\break
+            Here we will calculate the squares \\\break
+            windowIxx = Ixx[y - offset:y + offset + 1, x - offset:x + offset + 1]\\ \break
+            windowIyy = Iyy[y - offset:y + offset + 1, x - offset:x + offset + 1]\\ \break
+            Here we will calculate the sum of squares \\\break
+            Sxx = \Sigma \hspace{0,1cm}  windowIxx\\ \break
+            Syy = \Sigma \hspace{0,1cm} windowIyy\\ \break
+            
+             If lambda1 (Sxx) and lambda2 (Syy) have large positive
+             values, then a corner is found.\\ \break
+             We are selecting the minimum of lambda1 (Sxx) and lambda2 (Syy)\\ \break
+             r = min(Sxx, Syy)\\\break
+             
+             If r is greater than tresh, we will add the corner to the end of the corner List.
+             
+            if \hspace{0,1cm} r \hspace{0,1cm}is\hspace{0,1cm} greater\hspace{0,1cm}than\hspace{0,1cm} thresh:\\
+          
+                cornerList.append([x, y, r])\\\break
+    Our function will call the function filterCornersByDistance\\ 
+    and it will return filtered list of corners by euclidean distance comparism.\\\break
+    
+     return filterCornersByDistance(cornerList, dst)[0:maxCor]
 
-
-Expanding, E(u,v) = \Sigma \hspace{0,1cm} \omega(x,y) \hspace{0,1cm} [$I_x$^2$ u^2$ + $I_y$^2$ * v^2$ + 2 $I_x$ $I_y$ u v] \\
-
-Taking u,v out and re-write in Matrix notation give us:\\
-
-E(u,v) \approx (u,v)M(x y)\\
-
-Here, M = \omega(x,y)* $$
-                    \begin{pmatrix}
-                    \Sigma \hspace{0,1cm} $I_x$^2 & \Sigma $I_x$ $I_y$\\
-                    \Sigma \hspace{0,1cm} $I_x$ $I_y$ & \Sigma $I_y$^2\\
-                    \end{pmatrix}
-                $$\\
-\break
-\begin{math}
-R= min( \lambda1, \lambda2)
-
-det M \hspace{0,1cm} =\hspace{0,1cm} \lambda1 \hspace{0,1cm} \lambda2
-
-trace M \hspace{0,1cm} =\hspace{0,1cm} \lambda1  + \lambda2
-\end{math}
 \end{document}

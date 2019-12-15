@@ -129,7 +129,7 @@ Draws all  the detected corners on two separate test images.
 
 <br/>
 
-##Comparison
+###Comparison
 <table>
   <tr>
     <td>Find corners</td>

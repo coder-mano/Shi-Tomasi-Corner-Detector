@@ -130,7 +130,9 @@ Draws all  the detected corners on two separate test images.
 <br/>
 
 ###Comparison
+Find corners detector
 <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage1.png"/>
+Good features to track
 <img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage1.png"/>
 
 ## Pseudocode

@@ -130,7 +130,6 @@ Draws all  the detected corners on two separate test images.
 <br/>
 
 ##Comparison
-
 <table>
   <tr>
     <td>Find corners</td>
@@ -140,6 +139,30 @@ Draws all  the detected corners on two separate test images.
     <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage1.png"/>
 </td>
     <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage1.png"/>
+</td>
+  </tr>
+    <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage3.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage3.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage4.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage4.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage6.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage6.png"/>
+</td>
+  </tr>
+      <tr>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/assignmentImage99.png"/>
+</td>
+    <td><img src="https://github.com/Coder-mano/Shi-Tomasi-Corner-Detector/blob/master/OtherExperiments/builtInImage99.png"/>
 </td>
   </tr>
 </table>

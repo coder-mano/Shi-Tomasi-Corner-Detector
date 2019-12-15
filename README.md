@@ -40,6 +40,7 @@ After that we count the minimum of euclidean distance between corners detected. 
  - In the blue and gray regions, λ1 or λ2 is less than selected minimum .
  - In the red region, both λ1 and λ2 are less than the required minimum.
 
+<br/>
 
 ## Assignment implementation overview
 

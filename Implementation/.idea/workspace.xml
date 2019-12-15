@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14cf355b-6702-42a1-85fc-78cdc4c28729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindCorners.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindCorners.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtherExperiments/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PerformanceExperiments/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PerformanceExperiments/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +116,7 @@
       <workItem from="1576345862703" duration="5363000" />
       <workItem from="1576353322370" duration="34000" />
       <workItem from="1576353424199" duration="5737000" />
-      <workItem from="1576371174831" duration="7598000" />
+      <workItem from="1576371174831" duration="8981000" />
     </task>
     <servers />
   </component>

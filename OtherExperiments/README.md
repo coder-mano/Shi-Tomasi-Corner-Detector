@@ -6,14 +6,14 @@
  * H1 hypothesis determines that the stated null hypothesis was rejected, and there is a statistically significant difference for a given alpha = 0.05.
 
  ## Methods used to perform the experiments.
- * Wilcoxon test is a nonparametric test that compares the values of two groups. A significant result suggests that the values for the two groups are different. 
+ * **Wilcoxon test** is a nonparametric test that compares the values of two groups. A significant result suggests that the values for the two groups are different. 
  ```r
  library(stats)
  p1 = wilcox.test(x[,1],y[,1],conf.level = 0.95, paired = TRUE, alternative = "two.sided")$p.value
  p2 = wilcox.test(x[,2],y[,2],conf.level = 0.95, paired = TRUE, alternative = "two.sided")$p.value
  p=(p1+p2)/2
  ```
- * The SIGN test assesses the number of observations in one group that are greater than paired observations in the other group without accounting for the magnitude of the difference. The test is similar in purpose to the two-sample Wilcoxon test but looks specifically at the median value of differences.
+ * The **SIGN test** assesses the number of observations in one group that are greater than paired observations in the other group without accounting for the magnitude of the difference. The test is similar in purpose to the two-sample Wilcoxon test but looks specifically at the median value of differences.
  ```r
  library(BSDA)
  p1=SIGN.test(x[,1],y[,1],alternative = "two.sided", conf.level = 0.95)$p.value

@@ -72,14 +72,14 @@ def main():
         dist = 10
 
         # Assignment Shi-Tomasi
-        assignmentTest(img, maxCorners, thresh, dist)
+        #assignmentTest(img, maxCorners, thresh, dist)
 
         # Built-in Shi-Tomasi
-        goodFeatureTest(img, maxCorners, thresh, dist)
+        #goodFeatureTest(img, maxCorners, thresh, dist)
 
         # OtherExperiments data preparation
-        cornerPrecisionTest(img, maxCorners, thresh, dist)
-        cornerNumberTest(img, maxCorners, thresh, dist)
+        #cornerPrecisionTest(img, maxCorners, thresh, dist)
+        #cornerNumberTest(img, maxCorners, thresh, dist)
 
         # Visualization
         color_img = fc.readImage('../images/combined.png')

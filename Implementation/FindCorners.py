@@ -14,7 +14,7 @@ def readImage(filename):
 
 def findCorners(img, maxCor, thresh, dst):
     # Pre-processing tests
-    img = imagePreProcessing(img)
+    # img = imagePreProcessing(img)
 
     # Find x and y derivatives
     dy, dx = np.gradient(img)
@@ -24,9 +24,7 @@ def findCorners(img, maxCor, thresh, dst):
 
     height = img.shape[0]
     width = img.shape[1]
-
-    window_size = (min(img.shape[0], img.shape[1]) / 1000) * 5
-    offset = int(window_size/25)
+    offset = 0  # customizable window size offset
 
     cornerList = []
     # Search corners in image
@@ -45,7 +43,7 @@ def findCorners(img, maxCor, thresh, dst):
             # det = (Sxx * Syy) - (Sxy**2)
             # trace = Sxx + Syy
 
-            # If lambda1 and lambda2 have large positive
+            # If Sxx(lambda1) and Syy(lambda2) have large positive
             # values, then a corner is found.
             r = min(Sxx, Syy)
             # r = det - k*(trace**2)

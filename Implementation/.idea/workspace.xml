@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14cf355b-6702-42a1-85fc-78cdc4c28729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindCorners.py" beforeDir="false" afterPath="$PROJECT_DIR$/FindCorners.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +118,7 @@
       <workItem from="1576345862703" duration="5363000" />
       <workItem from="1576353322370" duration="34000" />
       <workItem from="1576353424199" duration="5737000" />
-      <workItem from="1576371174831" duration="3759000" />
+      <workItem from="1576371174831" duration="7598000" />
     </task>
     <servers />
   </component>
@@ -122,22 +126,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576371154374">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576433591873">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576371154374" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576371154373">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576433591873" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576433591871">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576371154373" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576371154373">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576433591871" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576433591870">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576371154373" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576371154373">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576433591870" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576433591872">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576371154373" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576433591872" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1576345816480">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -151,6 +155,6 @@
     <SUITE FILE_PATH="coverage/shi_tomasi$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576345677010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576345823300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shi_tomasi$FindCorners.coverage" NAME="FindCorners Coverage Results" MODIFIED="1576338023575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576373033863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576433591861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

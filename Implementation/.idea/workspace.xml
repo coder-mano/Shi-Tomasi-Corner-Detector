@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14cf355b-6702-42a1-85fc-78cdc4c28729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OtherExperiments/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PerformanceExperiments/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../PerformanceExperiments/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/assignmentImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/../OtherExperiments/builtInImage.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.GoodFeatues">
     <configuration name="FindCorners" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Implementation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +51,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FindCorners.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GoodFeatues" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Implementation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../GoodFeatues.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GoodFeatues" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.FindCorners" />
       </list>
@@ -116,7 +139,7 @@
       <workItem from="1576345862703" duration="5363000" />
       <workItem from="1576353322370" duration="34000" />
       <workItem from="1576353424199" duration="5737000" />
-      <workItem from="1576371174831" duration="8981000" />
+      <workItem from="1576371174831" duration="11463000" />
     </task>
     <servers />
   </component>
@@ -124,22 +147,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576433591873">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1576454227071">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576433591873" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576433591871">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1576454227071" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1576454227070">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576433591871" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576433591870">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1576454227070" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1576454227069">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576433591870" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576433591872">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1576454227069" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1576454227071">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576433591872" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1576454227071" />
     <state x="141" y="39" key="SettingsEditor" timestamp="1576345816480">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -150,9 +173,10 @@
     <state x="317" y="232" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1576345778291" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Implementation$GoodFeatues.coverage" NAME="GoodFeatues Coverage Results" MODIFIED="1576454227063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../.." />
     <SUITE FILE_PATH="coverage/shi_tomasi$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576345677010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576345823300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/shi_tomasi$FindCorners.coverage" NAME="FindCorners Coverage Results" MODIFIED="1576338023575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576433591861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Implementation$Main.coverage" NAME="Main Coverage Results" MODIFIED="1576454192218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

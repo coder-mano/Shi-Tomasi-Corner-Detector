@@ -81,6 +81,7 @@ def main():
     color_img = fc.readImage('../images/combined.png')
     # color_img = fc.readImage('../images/chess.png')
     # color_img = fc.readImage('../images/simple.png')
+
     img = color_img
 
     if img is not None:

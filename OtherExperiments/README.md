@@ -84,5 +84,5 @@
 
 
 ## Conclusion
-As we can see, the differences between the listed algorithms are quite minimal. The occurrences of minor differences in coordinates of some specific corners are caused by Euclidean distance calculation. 
+The main deficiency of our implementation is a corner detection on somehow curved objects as circles, diagonal lines, etc. The algorithm could be improved by using additional image preprocessing features. We consider as a possible solution to use a convolution mask with a gaussian blur which expands the image by a small value and would cause a decrease of contrast and gradient, which implies a reduction of R value. The built-in function does some similar image preprocessing, however, we didnt succeeded in finding the exact parameters of the preprocessing activity.
 

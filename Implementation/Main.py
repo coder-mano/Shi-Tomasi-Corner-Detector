@@ -62,14 +62,14 @@ def visualTest(color_img, img, maxCor, thresh, dst):
 
     # Assignment Shi-Tomasi
     assignmentCorners = fc.findCorners(img, maxCor, thresh, dst)
-    tmpImage = color_img
+    tmpImage = color_img.copy()
     for corner in assignmentCorners:
         cv2.circle(tmpImage, (corner[0], corner[1]), 3, 255, -1)
         cv2.imwrite("../OtherExperiments/assignmentImage.png", tmpImage)
 
     # Built-in Shi-Tomasi
     builtInCorners = np.int0(cv2.goodFeaturesToTrack(img, maxCor, thresh, dst))
-    tmpImage = color_img
+    tmpImage = color_img.copy()
     for corner in builtInCorners:
         x, y = corner.ravel()
         cv2.circle(tmpImage, (x, y), 3, 255, -1)
